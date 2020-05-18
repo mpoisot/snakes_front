@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import axios, { AxiosRequestConfig } from "axios"
 
-const fileUploadUrl = "http://localhost:8009/upload"
-const urlUploadUrl = "http://localhost:8009/classify-url"
+const fileUploadUrl = process.env.BACKEND_URL + "/upload"
+const urlUploadUrl = process.env.BACKEND_URL + "/classify-url"
 
 export default function Uploader() {
   const [file, setFile] = useState()

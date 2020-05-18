@@ -68,15 +68,13 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-.env.test
-
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
 # Next.js build output
 .next
+.env.local
+.env.*.local
 
 # Nuxt.js build / generate output
 .nuxt
