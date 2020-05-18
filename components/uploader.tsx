@@ -94,7 +94,7 @@ export default function Uploader() {
           <input type="file" accept="image/*" onChange={handleFileChange} />
         </label>
         {file && <button onClick={uploadFile}>Upload</button>}
-        {/* { progress > -1 && <Progress percentage={this.state.progress} />} } */}
+        {/* { progress > -1 && <Progress percentage={this.state.progress} />} }  */}
       </div>
       <div>
         Or paste an image URL
