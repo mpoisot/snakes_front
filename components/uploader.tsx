@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import axios, { AxiosRequestConfig } from "axios"
+import Progress from "./progress"
 
 const fileUploadUrl = process.env.BACKEND_URL + "/upload"
 const urlUploadUrl = process.env.BACKEND_URL + "/classify-url"
@@ -94,7 +95,7 @@ export default function Uploader() {
           <input type="file" accept="image/*" onChange={handleFileChange} />
         </label>
         {file && <button onClick={uploadFile}>Upload</button>}
-        {/* { progress > -1 && <Progress percentage={this.state.progress} />} }  */}
+        {progress > -1 && <Progress percentage={progress} />}
       </div>
       <div>
         Or paste an image URL
